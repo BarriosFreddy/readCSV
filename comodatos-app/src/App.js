@@ -14,7 +14,7 @@ class App extends React.Component {
 
   componentDidMount() {
     axios
-      .get(`http://localhost:3001/comodatos`)
+      .get(`https://comodatos.herokuapp.com/comodatos`)
       .then((res) => {
         const comodatos = res.data;
         this.setState({ comodatos });
