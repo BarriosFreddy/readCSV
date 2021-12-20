@@ -13,6 +13,12 @@ const { PORT = 3000 } = process.env
   await mongodblib.connect();
 
   app.use(cors())
+  app.get('/', (req, res) => {
+    res.send({
+      name: "Comodatos app",
+      version: "0.0.1"
+    })
+  })
   app.get('/comodatos', comodatosController.get)
   app.listen(PORT, () => {
     console.log(`http://localhost:${PORT}`);
