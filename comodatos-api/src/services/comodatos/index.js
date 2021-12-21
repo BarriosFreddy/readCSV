@@ -1,11 +1,11 @@
-const mongoHelper = require('../../helper/mongodb')
+const mongoHelper = require("../../helper/mongodb");
 
-const COLLECTION = 'comodato'
+const COLLECTION = "comodato";
 
-const findAll = async () => {
-   return await mongoHelper.getAll(COLLECTION, null, {size: 100})
-}
+const findAll = async ({ BL = undefined }) => {
+  return await mongoHelper.getAll(COLLECTION, { BL }, { size: 100 });
+};
 
 module.exports = {
-    findAll
-}
+  findAll,
+};
