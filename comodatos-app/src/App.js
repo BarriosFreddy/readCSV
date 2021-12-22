@@ -4,8 +4,8 @@ import axios from "axios";
 import { Button, Col, Container, Form, Row, Table } from "react-bootstrap";
 import React from "react";
 
-const BASE = "http://localhost:3001/comodatos";
-//const BASE = "https://comodatos.herokuapp.com/comodatos"
+//const BASE = "http://localhost:3001/comodatos";
+const BASE = "https://comodatos.herokuapp.com/comodatos"
 
 class App extends React.Component {
   constructor(props) {
